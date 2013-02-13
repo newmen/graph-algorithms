@@ -9,7 +9,7 @@ def get_contents(comment_begin)
     num, _ = num.split(' ', 2)
     fnum, snum = num.split('.')
     comment['//'] = ''
-    [fnum, snum, comment.strip, filename]
+    [fnum.to_i, snum.to_i, comment.strip, filename]
   end
 end
 
